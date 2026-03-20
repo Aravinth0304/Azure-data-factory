@@ -1,0 +1,25 @@
+{
+	"name": "schedule",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pipeline3-adls to azure sql",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 2,
+				"startTime": "2026-03-03T12:04:00",
+				"endTime": "2026-03-16T12:10:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}
